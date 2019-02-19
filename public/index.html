@@ -2,23 +2,43 @@
 <html lang="en">
 
 <head>
+  <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NBZC4RG');
+    </script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="An app to spark timely conversations about finances between trusted family and friends" />
+  <meta property="og:title" content="Toucan 🚥" />
+  <meta property="og:description" content="An app to spark timely conversations about finances between trusted family and friends" />
+  <meta property="og:image" content="/images/toucan-og-image.png" />
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <title>Toucan App – Share your bank balance status with a friend</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Favicons from realfavicongenerator.net -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#9197AE">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body id="page-top">
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBZC4RG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -62,6 +82,31 @@
             <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
             <li>Minimal custom CSS so you are free to explore your own unique design options</li>
           </ul>
+
+          <!-- Begin Mailchimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="https://usetoucan.us19.list-manage.com/subscribe/post?u=e6da946ece58f79fd6a846548&amp;id=2fff5f1bbb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <h2>Subscribe to our mailing list</h2>
+                <div class="mc-field-group">
+                  <input type="email" value="you@example.com" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_e6da946ece58f79fd6a846548_2fff5f1bbb" tabindex="-1" value="">
+                </div>
+                <div class="clear">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--End Mailchimp Signup Forms-->
+
         </div>
       </div>
     </div>
@@ -106,6 +151,28 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+
+  <!-- Cookie bar from https://cookieconsent.insites.com/download/ -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f02d3a"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "We use cookies.",
+        "href": "https://usetoucan.com/data_protection_policy.pdf"
+      }
+    })});
+  </script>
 
 </body>
 
