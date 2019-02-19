@@ -123,11 +123,12 @@ void grpc_init(void) {
     grpc_core::Fork::GlobalInit();
     grpc_fork_handlers_auto_register();
     gpr_time_init();
+    gpr_arena_init();
     grpc_stats_init();
     grpc_slice_intern_init();
     grpc_mdctx_global_init();
     grpc_channel_init_init();
-    grpc_core::ChannelzRegistry::Init();
+    grpc_core::channelz::ChannelzRegistry::Init();
     grpc_security_pre_init();
     grpc_core::ExecCtx::GlobalInit();
     grpc_iomgr_init();
@@ -160,6 +161,7 @@ void grpc_shutdown(void) {
   if (--g_initializations == 0) {
     {
       grpc_core::ExecCtx exec_ctx(0);
+      grpc_iomgr_shutdown_background_closure();
       {
         grpc_timer_manager_set_threading(
             false);  // shutdown timer_manager thread
@@ -176,7 +178,7 @@ void grpc_shutdown(void) {
       grpc_mdctx_global_shutdown();
       grpc_handshaker_factory_registry_shutdown();
       grpc_slice_intern_shutdown();
-      grpc_core::ChannelzRegistry::Shutdown();
+      grpc_core::channelz::ChannelzRegistry::Shutdown();
       grpc_stats_shutdown();
       grpc_core::Fork::GlobalShutdown();
     }

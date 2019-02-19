@@ -18,6 +18,8 @@
 
 #include <grpc/support/port_platform.h>
 
+#include "src/core/tsi/grpc_shadow_boringssl.h"
+
 #include "src/core/lib/security/credentials/jwt/jwt_verifier.h"
 
 #include <limits.h>
@@ -29,7 +31,9 @@
 #include <grpc/support/sync.h>
 
 extern "C" {
+#include <openssl/bn.h>
 #include <openssl/pem.h>
+#include <openssl/rsa.h>
 }
 
 #include "src/core/lib/gpr/string.h"
