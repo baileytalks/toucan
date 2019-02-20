@@ -18,7 +18,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -70,12 +71,35 @@ ul li {
   margin-bottom: 0.25rem;
 }
 
+.bg-primary {
+  background-color: #9197AE!important;
+}
+
+.bg-dark {
+  background-color: #273043!important;
+}
+
+.bg-light {
+  background-color: #9197AE!important;
+}
+
 strong {
   font-weight: 700;
 }
 
 a {
   color: white;
+}
+
+#about a {
+  color: #9197AE;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -120,11 +144,72 @@ p {
 }
 
 header {
-  padding: 156px 0 100px;
+  padding: 120px 0 40px;
 }
 
-section {
-  padding: 150px 0;
+#form {
+  padding: 30px 0 30px;
+}
+
+#form h3 {
+  color: white;
+}
+
+.logo {
+  max-width: 18rem;
+  padding: 10px 0 20px;
+}
+
+#signupbutton {
+  max-width: 10rem;
+}
+
+#statistic {
+  padding: 30px 0 30px;
+  background-color: #9197AE;
+  color: white;
+}
+
+#photos {
+  padding: 30px 0 30px;
+  color: white;
+}
+
+#statistic p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Nunito', sans-serif;
+}
+
+#photos {
+  background-color: #273043;
+}
+
+#features {
+  padding: 80px 0 80px;
+  background-color: #EFF6EE;
+}
+
+#about {
+  padding: 80px 0 80px;
+  background-color: #EFF6EE!important;
+}
+
+#contact {
+  padding: 80px 0 80px;
+}
+
+.stat {
+  font-size: 5rem;
+}
+
+.form {
+  text-align: left;
+}
+
+.no-gutter {
+  padding-top: 10px;
 }
 
 @media (min-width: 700px) {
@@ -259,12 +344,10 @@ input:last-child {
   .newsletter-signup input {
     display: inline-block;
     margin: 0;
-    width: auto;
   }
   .newsletter-signup input[type="email"] {
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
-    width: 16rem;
   }
 }
 
@@ -276,5 +359,6 @@ footer {
 }
 
 footer p {
+  font-size: 0.85rem;
   margin: 0;
 }
