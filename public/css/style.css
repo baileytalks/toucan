@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Nunito';
-  font-display: auto;
+  font-display: optional;
   src: url('https://fonts.googleapis.com/css?family=Nunito');
 }
 
 @font-face {
   font-family: 'Open Sans';
-  font-display: auto;
+  font-display: optional;
   src: url('https://fonts.googleapis.com/css?family=Open+Sans');
 }
 
