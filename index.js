@@ -11,5 +11,5 @@ app.use(express.static('public'));
 app.listen(port, () => console.log(`Toucan listening on port ${port}!`))
 
 app.use(cacheControl({
-  maxAge: 60
+  maxAge: 31536000
 }));
