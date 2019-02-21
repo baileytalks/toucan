@@ -13,6 +13,7 @@
     "bootstrap": "^4.3.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-cache-controller": "^1.1.0",
     "firebase": "^5.8.3",
     "gulp": "^4.0.0",
     "jquery": "^3.3.1"
