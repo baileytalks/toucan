@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
+
 @font-face {
   font-family: 'Nunito';
   font-display: optional;
-  src: url('https://fonts.googleapis.com/css?family=Nunito');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-display: optional;
-  src: url('https://fonts.googleapis.com/css?family=Open+Sans');
 }
 
 html, body, div, span, applet, object, iframe,
